@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <section class="game">
+      <br>
+      <!--Title -->
+      <div class="title">
+        Rock Paper Scissors
+      </div>
+      <br>
+      <br>
+      <!-- Scoreboard Display for User and AI -->
+      <div class="score">
+          <div class="playerScore">
+              <h2>Player</h2>
+              <p id="p-count"class="p-count count">0</p>
+
+          </div>
+          <div class="computerScore">
+              <h2>Computer</h2>
+              <p id="c-count"class="c-count count">0</p>
+          </div>
+      </div>
+          <!-- Instructions -->
+          <br>
+          <div class="options">
+            <button class="rock" onClick="Rock()"><img src="https://media.vanityfair.com/photos/5f6e0d388f3d1388648ddf94/4:3/w_1779,h_1334,c_limit/vin.jpg" width="150" height="150" alt="Rock"><br>Rock</button>
+            <button class="paper" onClick="Paper()"><img src="https://static.wikia.nocookie.net/minecraft/images/3/30/MapOld.png/revision/latest/smart/width/300/height/300?cb=20190928063128" width="150" height="150" alt="Paper"><br>Paper</button>
+            <button class="scissors" onClick="Scissors()"><img src="https://cdn3.volusion.com/4jdsg.2wu4y/v/vspfiles/photos/608206-2.jpg?v-cache=1412526070" width="150" height="150" alt="Scissors"><br>Scissors</button>
+        </div>
+        <br>
+        <br>
+        <h2 class="text-center" id="result">Results Here...</h2>
+        <br>
+        <br>
+          <!--Final result of game -->
+        <div class="result"></div>
+
+          <!--Reload the game -->
+          <div class="text-center">
+        <button class="reset" onClick="reset()">Reset</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
